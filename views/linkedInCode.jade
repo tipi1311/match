@@ -1,0 +1,19 @@
+extends layout
+
+
+block content
+    h1(class = 'header')= title
+    
+    div(class = 'container')
+        p(class="thick18") Hello Friends,
+        
+        p(class="thick16") Welcome to InterviewHelp.io . This portal will help you to autopost discourse content to your LinkedIn account. You are just below steps away to do it!!!
+        p Step 1: Click below Click here to Generate LinkedIn Code button to proceed. You will now be redirected to LinkedIn login page
+        p Step 2: Enter your LinkedIn credentials and on successful login, click on allow button on the popup prompt.
+        p Step 3: Finally, click on the Add User Profile button to add the user profile. 
+        p(class="thick16") Voila, you are now successfully onboarded for LinkedIn autopost !!!
+
+    <br/>
+    div(class = 'centerButton')
+        input(type="button", onclick=`window.open('${link}', '_self');`, value = "Click here to Generate LinkedIn Code", name="linkedInCode" class="button centerButton")
+        
